@@ -10,7 +10,7 @@ function App() {
   }))
 
   const renderUser = ({ index, style }) => (
-    <div style={style} className='flex gap-8 items-center mt-2'>
+    <div style={style} className='flex gap-8 items-center py-8'>
       <div className='w-8 h-8 border rounded-full flex items-center justify-center'>
         {index + 1}
       </div>
@@ -31,7 +31,7 @@ function App() {
     <div>
       <FixedSizeList
         height={600}
-        width={window.innerWidth}
+        width={600}
         itemCount={data.length}
         itemSize={50}>
         {renderUser}
